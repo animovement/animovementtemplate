@@ -1,0 +1,19 @@
+/* ------------- section descriptions ------------------ */
+
+// Indent the descriptor list so similar functions are visually grouped.
+div[class="section level2"] > dl,
+div[class="section level2"] > dt,
+div[class="section level2"] > dd,
+div[class="section "] > dl,
+div[class="section "] > dt,
+div[class="section "] > dd
+{
+    padding-left: 15px !important;
+}
+
+// Tighten the gap between a section header and its descriptor.
+div[class="section level2"] > p.section-desc,
+div[class="section "] > p.section-desc
+{
+    margin-bottom: 0.2rem !important;
+}

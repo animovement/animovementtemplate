@@ -1,0 +1,43 @@
+template:
+  light-switch: true
+
+home:
+  links:
+    - text: Learn more about animovement
+      href: https://animovement.dev/animovement/
+
+# Shared author details, picked up by each package's pkgdown site.
+authors:
+  Mikkel Roald-Arbøl:
+    href: https://roald-arboel.com
+
+navbar:
+  structure:
+    left: [reference, articles, news]
+    right: [search, animovement, zulip, github, lightswitch]
+  components:
+    animovement:
+      icon: fab fa-r-project
+      text: animovement
+      aria-label: animovement
+      menu:
+        - text: anicheck
+          href: https://animovement.dev/anicheck/
+        - text: aniframe
+          href: https://animovement.dev/aniframe/
+        - text: animetric
+          href: https://animovement.dev/animetric/
+        - text: animovement
+          href: https://animovement.dev/animovement/
+        - text: aniprocess
+          href: https://animovement.dev/aniprocess/
+        - text: aniread
+          href: https://animovement.dev/aniread/
+        - text: anispace
+          href: https://animovement.dev/anispace/
+        - text: anivis
+          href: https://animovement.dev/anivis/
+    zulip:
+      icon: fa-comments
+      href: https://animovement.zulipchat.com
+      aria-label: Chat on Zulip

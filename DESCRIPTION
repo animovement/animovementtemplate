@@ -1,0 +1,23 @@
+Package: animovementtemplate
+Title: Template Package for 'animovement' pkgdown Websites
+Version: 0.1.0
+Authors@R:
+    person(
+      "Mikkel",
+      "Roald-Arbøl",
+      role = c("aut", "cre"),
+      email = "animovement.84w1m@passmail.com",
+      comment = c(ORCID = "0000-0002-9998-0058")
+    )
+Description: A template package providing the shared pkgdown configuration —
+    navbar, ecosystem dropdown, theme, and author details — for all packages in
+    the 'animovement' ecosystem. Packages inherit it via the pkgdown
+    'template.package' field so the shared look and links live in one place.
+License: MIT + file LICENSE
+URL: https://github.com/animovement/animovementtemplate
+BugReports: https://github.com/animovement/animovementtemplate/issues
+Imports:
+    pkgdown (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
