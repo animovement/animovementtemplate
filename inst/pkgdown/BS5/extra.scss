@@ -55,22 +55,11 @@ div[class="section "] > p.section-desc
 // stops an anchor landing beneath it. Both assume pkgdown's own 56px bar.
 // tidytemplate needs 78px at this font size; ours adds 0.7rem of padding on
 // top of that.
-$navbar-height: 84px;
+$navbar-height: 90px;
 
+// Bootstrap's 0.5rem sits tight around a search box at this font size.
 .navbar {
-  // Bootstrap's 0.5rem sits tight around a search box at this font size.
   --bs-navbar-padding-y: 0.85rem;
-  --bs-navbar-nav-link-padding-x: 0.4rem;
-
-  // Nav items are labels, not reading text, so they stay at 1rem while the
-  // body grows. animovement is the case that forces this: it carries the most
-  // items of any site in the suite, and at 1.2rem its bar wraps to two lines
-  // on a 1280px window. The brand keeps its own size, which is set in rem.
-  font-size: 1rem;
-
-  .form-control {
-    font-size: 1rem;
-  }
 }
 
 html,
