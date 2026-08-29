@@ -16,8 +16,11 @@ template:
 
 home:
   links:
+    # The hub, not the metapackage's own site: this is the one route to the
+    # tutorials from every package site, and on the metapackage site itself
+    # the old target was the page the reader was already on.
     - text: Learn more about animovement
-      href: https://animovement.dev/animovement/
+      href: https://animovement.dev
 
 # Shared author details, picked up by each package's pkgdown site.
 authors:
