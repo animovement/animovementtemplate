@@ -28,9 +28,11 @@ div[class="section "] > p.section-desc
   gap: 1rem;
   align-items: center;
   min-height: 0;
-  // The padding is what gives the logo room inside the rule; tidytemplate
-  // ends up at 0.5rem here, which crowds it against the border.
-  margin: 2rem 0 2.5rem;
+  // The padding is what gives the logo room inside the rule, and it is the
+  // only thing above it: the navbar offset already sits there, so a top
+  // margin as well reads as lopsided. tidytemplate ends up at 0.5rem of
+  // padding here, which crowds the logo against the border.
+  margin: 0 0 2.5rem;
   padding: 2rem 0;
   // Not a fixed grey: the site has light-switch enabled.
   border-bottom: 1px solid var(--bs-border-color);
