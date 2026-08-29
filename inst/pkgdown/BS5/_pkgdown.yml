@@ -1,8 +1,10 @@
 template:
   light-switch: true
   bslib:
-    # Bootstrap derives its heading scale from this, so h1 lands at 3rem.
-    font_size_base: 1.2rem
+    # Bootstrap derives its heading scale from this, so h1 lands at 2.75rem.
+    # 1.2rem, as the tidymodels sites use, is too heavy in the system sans
+    # they do not use.
+    font_size_base: 1.1rem
 
 home:
   links:
