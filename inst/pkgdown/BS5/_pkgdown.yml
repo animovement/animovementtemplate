@@ -1,10 +1,26 @@
 template:
   light-switch: true
+  bslib:
+    # Both SIL Open Font License, fetched at build time and written into the
+    # site's deps/, so pages make no request to Google.
+    base_font: {google: "Source Sans Pro"}
+    code_font: {google: "Source Code Pro"}
+    # Bootstrap derives its heading scale from this, so h1 lands at 3rem.
+    # 1.2rem reads heavy in Bootstrap's system sans but sits right in Source
+    # Sans Pro, which is the pairing the tidymodels sites use.
+    font_size_base: 1.2rem
+    # Twice Bootstrap's default. Half of it becomes the container's horizontal
+    # padding, so the content block starts further in; the same variable is the
+    # column gutter, which also opens up the gap to the sidebar.
+    grid_gutter_width: 3rem
 
 home:
   links:
+    # The hub, not the metapackage's own site: this is the one route to the
+    # tutorials from every package site, and on the metapackage site itself
+    # the old target was the page the reader was already on.
     - text: Learn more about animovement
-      href: https://animovement.dev/animovement/
+      href: https://animovement.dev
 
 # Shared author details, picked up by each package's pkgdown site.
 authors:
