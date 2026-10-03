@@ -33,6 +33,11 @@ The package then keeps only what is genuinely package-specific in its own
 `_pkgdown.yml` — `url`, the `home.title`, and the `reference` index. Everything
 shared (navbar, dropdown, authors, theme) is inherited from here.
 
+The favicon is shared too: the animovement suite icon in
+`inst/pkgdown/BS5/assets/`, linked from every page by
+`inst/pkgdown/BS5/templates/in-header.html`. A package with its own
+`pkgdown/favicon/` keeps that instead, so packages should not carry one.
+
 To change a shared link or add a new package to the dropdown, edit
 `inst/pkgdown/BS5/_pkgdown.yml` here once; every site picks it up on its next
 build.
